@@ -42,7 +42,7 @@ floating_modifier Mod1
 bindsym Mod1+Return exec xfce4-terminal
  
 #start firefox
-bindsym Mod1+Shift+Return exec chromium 
+bindsym Mod1+Shift+Return exec chromium
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -100,9 +100,12 @@ bindsym Mod1+Shift+space floating toggle
 
 #set up wallpaper
 exec_always rhythmbox
-exec_always feh --bg-scale ~/picture/2.jpg
-#set up fcitx
-exec_always fcitx
+exec_always feh --bg-scale ~/Picture/1.png
+#power manager
+exec_always xfce4-power-manager
+#input
+exec_always ibus-daemon
+
 #set up compton
 exec_always compton -f
 
